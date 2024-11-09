@@ -1,0 +1,106 @@
+/* Ensure consistent table layout */
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse; /* Collapsed borders for better appearance */
+  table-layout: fixed; /* Makes sure columns don't resize based on content */
+}
+
+th, td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+  font-size: 16px;
+  min-height: 50px; /* Ensure consistent row height */
+}
+
+th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Centering Action Buttons */
+th:last-child, td:last-child {
+  text-align: center;
+}
+
+/* Styling for Buttons */
+button {
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  font-size: 14px;
+  margin: 0 5px;
+}
+
+button.edit {
+  background-color: #f39c12;
+  color: white;
+}
+
+button.edit:hover {
+  background-color: #e67e22;
+}
+
+button.delete {
+  background-color: #e74c3c;
+  color: white;
+}
+
+button.delete:hover {
+  background-color: #c0392b;
+}
+
+/* Add spacing between the form inputs and buttons */
+form {
+  margin-bottom: 30px;
+}
+
+form .container {
+  display: flex;
+  gap: 10px;
+}
+
+form input[type="text"] {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: auto;
+}
+
+form button {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #218838;
+}
+
+/* Table Responsiveness */
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Styling for the table wrapper */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}

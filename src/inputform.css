@@ -1,0 +1,102 @@
+/* General Reset and Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.6em;
+    color: #333;
+}
+
+/* Input Group Styling */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-size: 1.1em;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+    transition: all 0.2s ease;
+}
+
+/* Input Field Styling */
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #4CAF50;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(72, 170, 85, 0.5);
+}
+
+input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+/* Submit Button Styling */
+button.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button.btn:hover {
+    background-color: #45a049;
+}
+
+button.btn:active {
+    background-color: #388e3c;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+    .form-container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+}
